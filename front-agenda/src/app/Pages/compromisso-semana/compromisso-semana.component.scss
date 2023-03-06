@@ -1,0 +1,62 @@
+.meu-componente {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+  }
+  
+  .dia-semana {
+    margin-right: 10px; /* Espaçamento entre os dias */
+  }
+
+  h2{
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+  }
+
+  h3{
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+  }
+
+  li{
+    display: flex;
+    justify-content: center;
+  }
+
+  button {
+    display: inline-block;
+    padding: 5px 10px;
+    margin-left: 240px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    
+    &:hover {
+      background-color: #555;
+    }
+    
+    &:active {
+      background-color: #222;
+    }
+    
+    &.botao-secundario {
+      background-color: #ccc;
+      color: #333;
+      
+      &:hover {
+        background-color: #ddd;
+      }
+      
+      &:active {
+        background-color: #aaa;
+      }
+    }
+  }

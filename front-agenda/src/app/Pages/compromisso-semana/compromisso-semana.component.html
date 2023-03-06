@@ -1,0 +1,19 @@
+<div class="meu-componente">
+  <div class="dias-semana">
+    <div *ngFor="let dia of diasSemana" class="dia-semana">
+      <h2>{{ dia.diaSemana }}</h2>
+      <h3>{{ dia.mes }}</h3>
+      <ul>
+        <ng-container *ngIf="dia.compromissos.length > 0; else semCompromissos">
+          <li *ngFor="let compromisso of dia.compromissos">
+            {{ compromisso.descricao }}
+          </li>
+        </ng-container>
+      </ul>
+      <ng-template #semCompromissos>
+        <p>Nenhum compromisso para hoje</p>
+      </ng-template>
+    </div>
+  </div>
+</div>
+<button (click)="goToCompromissoHoje()">Ver Compromissos de hoje</button>
